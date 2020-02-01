@@ -5,12 +5,3 @@ function printTable (table)
         end
     end
 end
-
-someTable = {'a', 'b', 'c'}
-newTable = {}
-newTable = table.move(someTable, 2, #someTable, 1, newTable)
-
-
-printTable(someTable)
-print('')
-printTable(newTable)
