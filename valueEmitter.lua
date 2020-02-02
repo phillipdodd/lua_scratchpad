@@ -7,8 +7,8 @@ function valueEmitter(list)
     end
 end
 
-x = rotato({1,2,3})
-y = rotato({'a', 'b', 'c'})
+x = valueEmitter({1,2,3})
+y = valueEmitter({'a', 'b', 'c'})
 
 print(x())
 print(y())
