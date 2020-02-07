@@ -1,4 +1,11 @@
 Vector = {}
+VectorMT = {
+    __concat = function(self, v)
+        return '{' .. tostring(self[1]) .. ',' .. tostring(self[2]) .. ',' ..tostring(self[3]) .. '}' .. v
+    end
+}
+setmetatable(Vector, VectorMT)
+
 function Vector:new(o)
     o = o or {}
     setmetatable(o, self)
