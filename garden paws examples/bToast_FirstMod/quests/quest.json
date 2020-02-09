@@ -1,0 +1,21 @@
+{
+  "id" : "bToast.TrophyQuest",
+  "relativeToId" : "gamestart",
+  "day" : 0,
+  "questTitle" : "Modding!",
+  "text" : "Hello, how is your modding going?\n\nCool! Gimme a daisy",
+  "questType" : "Collect",
+  "uponCompletion" : "Alright gotta go peace.",
+  "getFrom" : "Charlie",
+  "deliverTo" : "Charlie",
+  "seasonSpecific" : "spring,fall,winter,summer",
+  "questAsksFor" : "Daisy : 1",
+  "asksForExtraText" : "GIMME DAISY",
+  "npcShowsUp" : true,
+  "repeatable" : false,
+  "autotrigger" : false,
+  "itemReward" : "Poop : 1",
+  "goldReward" : 100,
+  "rewardIcon" : "poop",
+  "specialAreas" : "285, 5, 128"
+}

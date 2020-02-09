@@ -1,0 +1,8 @@
+{
+	"id": "bToast.ModderTrophy",
+	"craftedFrom": "Daisy : 5, Poop : 2",
+	"craftingMachine": "Workbench_1",
+	"craftingCommand": "Mush",
+	"craftingRequires": "",
+	"base": false
+}

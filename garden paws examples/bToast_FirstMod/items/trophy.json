@@ -1,0 +1,8 @@
+{
+	"id": "bToast_ModderTrophy",
+	"name": "#1 Modder Trophy",
+	"icon": "bittenToast_trophyIcon",
+	"stacksTo": 1,
+	"hasGlitter": true,
+	"usableType": "UsableBuilding",
+}

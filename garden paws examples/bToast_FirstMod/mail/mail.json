@@ -1,0 +1,10 @@
+{
+	"id": "btoast.ModderMail",
+	"relativeToId": "gamestart",
+	"day": 0,
+	"from": "Bitten Toast",
+	"subject": "For our newest modder!",
+	"letter": "This is a trophy reserved for our best modders! Take good care of it! You earned it!",
+	"signature": "Bitten Toast Games",
+	"items": "bToast.ModderTrophy : 1"
+}

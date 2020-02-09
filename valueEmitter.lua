@@ -1,4 +1,4 @@
-function valueEmitter(list)
+function rotato(list)
     local list = list
     return function () 
         local val = table.remove(list, 1)
@@ -7,8 +7,8 @@ function valueEmitter(list)
     end
 end
 
-x = valueEmitter({1,2,3})
-y = valueEmitter({'a', 'b', 'c'})
+x = rotato({1,2,3})
+y = rotato({'a', 'b', 'c'})
 
 print(x())
 print(y())
