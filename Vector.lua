@@ -1,13 +1,11 @@
 Vector = {}
-VectorMT = {
-    __concat = function(self, v)
-        return '{' .. tostring(self[1]) .. ',' .. tostring(self[2]) .. ',' ..tostring(self[3]) .. '}' .. v
-    end
-}
-setmetatable(Vector, VectorMT)
 
 function Vector:new(o)
-    o = o or {}
+    o = o or {
+        __tostring = function(self, v)
+            return '{' .. tostring(self[1]) .. ',' .. tostring(self[2]) .. ',' ..tostring(self[3]) .. '}' .. v
+        end
+    }
     setmetatable(o, self)
     self.__index = self
     return o
@@ -24,13 +22,13 @@ function Vector:distanceFrom(targetVector)
 
 end
 
-function diffSquared(a, b)
+function DiffSquared(a, b)
     return (a - b)^2
 end
 
-function sum(list)
+function Sum(list)
     local total = 0
-    for _, v in pairs(nums) do
+    for _, v in pairs(list) do
         total = total + v
     end
     return total
@@ -84,22 +82,22 @@ function Vector:goLeft(n)
     return newVector
 end
 
-function getPlayerPositionVector()
+function GetPlayerPositionVector()
     return Vector:new(World.GetPlayerPosition())
 end
 
-function setPlayerPositionVector(vector)
+function SetPlayerPositionVector(vector)
     return Vector:new(World.SetPlayerPosition(vector))
 end
 
-function getGroundPositionVector(vector, aboveGroundFloat) 
+function GetGroundPositionVector(vector, aboveGroundFloat) 
     return Vector:new(
         World.GetGroundPosition(vector, aboveGroundFloat)
     )
 end
 
-playerPosition = getPlayerPositionVector()
-setPlayerPositionVector(playerPosition:goUp(100):goForward(100))
+PlayerPosition = GetPlayerPositionVector()
+SetPlayerPositionVector(PlayerPosition:goUp(100):goForward(100))
 -- groundPosition = getGroundPositionVector(playerPosition, 0.5)
 
 -- for k, v in pairs(groundPosition:goBack(10000):goUp(123123)) do print(k, v) end 
