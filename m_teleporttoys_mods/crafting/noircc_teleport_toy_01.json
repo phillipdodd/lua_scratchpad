@@ -1,0 +1,8 @@
+{
+    "id" : "ncc_teleporttoy",
+    "craftedFrom" : "poop_rainbow:1, stardust:1, feather:2",
+    "craftingMachine" : "",
+    "craftingCommand" : "",
+    "craftingRequires" : "",
+    "base" : false
+}
