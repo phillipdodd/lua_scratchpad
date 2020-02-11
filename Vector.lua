@@ -90,7 +90,7 @@ function SetPlayerPositionVector(vector)
     return Vector:new(World.SetPlayerPosition(vector))
 end
 
-function GetGroundPositionVector(vector, aboveGroundFloat) 
+function GetGroundPositionVector(vector, aboveGroundFloat)
     return Vector:new(
         World.GetGroundPosition(vector, aboveGroundFloat)
     )
@@ -100,4 +100,4 @@ PlayerPosition = GetPlayerPositionVector()
 SetPlayerPositionVector(PlayerPosition:goUp(100):goForward(100))
 -- groundPosition = getGroundPositionVector(playerPosition, 0.5)
 
--- for k, v in pairs(groundPosition:goBack(10000):goUp(123123)) do print(k, v) end 
+-- for k, v in pairs(groundPosition:goBack(10000):goUp(123123)) do print(k, v) end
