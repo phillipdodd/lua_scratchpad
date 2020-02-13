@@ -2,6 +2,7 @@
 
 Bags = {}
 Bags["pd.item.bagobugs"]        = "smallinsects"
+Bags["pd.item.bagocoal"]        = "coal"
 Bags["pd.item.bagofeathers"]    = "feather"
 Bags["pd.item.bagofur"]         = "delicatefur"
 Bags["pd.item.bagogoldenpoo"]   = "goldenpoop"
