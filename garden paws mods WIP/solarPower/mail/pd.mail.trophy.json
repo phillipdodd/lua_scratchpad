@@ -1,0 +1,10 @@
+{
+    "id": "pd.mail.trophy",
+    "relativeToId": "gamestart",
+    "day": 0,
+    "from": "the future",
+    "subject": "solar trophy",
+    "letter": "it's a solar trophy",
+    "signature": "yr welcome",
+    "items": "pd.items.trophy : 1"
+}
