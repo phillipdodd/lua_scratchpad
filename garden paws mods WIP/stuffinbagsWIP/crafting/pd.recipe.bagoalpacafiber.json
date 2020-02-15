@@ -1,8 +1,0 @@
-{
-    "id": "pd.item.bagoalpacafiber",
-    "craftedFrom": "alpacafiber: 50, cloth: 1",
-    "craftingCommand": "Bag",
-    "craftingMachine": "workbench_crate",
-    "base": false,
-    "craftingrequires": "pd.quest.bagofur3"
-}
