@@ -1,4 +1,4 @@
-debug = true
+debug = false
 Player = {
     x = 200,
     y = 710,
@@ -32,13 +32,13 @@ Bullets = {}
 Enemies = {}
 
 function love.load(arg)
-    Player.img = love.graphics.newImage('assets/player_ship.png')
-    BulletImg[1] = love.graphics.newImage('assets/bullet_2_blue.png')
-    BulletImg[2] = love.graphics.newImage('assets/bullet_2_orange.png')
-    BulletImg[3] = love.graphics.newImage('assets/bullet_2_purple.png')
-    EnemyImg[1] = love.graphics.newImage('assets/enemy_1.png')
-    EnemyImg[2] = love.graphics.newImage('assets/enemy_2.png')
-    EnemyImg[3] = love.graphics.newImage('assets/enemy_3.png')
+    Player.img = love.graphics.newImage('gfx/character.png')
+    BulletImg[1] = love.graphics.newImage('gfx/bullet_2_blue.png')
+    BulletImg[2] = love.graphics.newImage('gfx/bullet_2_orange.png')
+    BulletImg[3] = love.graphics.newImage('gfx/bullet_2_purple.png')
+    EnemyImg[1] = love.graphics.newImage('gfx/enemy_1.png')
+    EnemyImg[2] = love.graphics.newImage('gfx/enemy_2.png')
+    EnemyImg[3] = love.graphics.newImage('gfx/enemy_3.png')
 end
 
 function love.update(dt)    
