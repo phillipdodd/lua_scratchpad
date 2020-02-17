@@ -1,3 +1,9 @@
 [submodule "love-platformer/libs/hump"]
 	path = love-platformer/libs/hump
 	url = https://github.com/vrld/hump.git
+[submodule "love2d-scratchpad/libs/hump"]
+	path = love2d-scratchpad/libs/hump
+	url = https://github.com/vrld/hump.git
+[submodule "love2d-scratchpad/libs/bump"]
+	path = love2d-scratchpad/libs/bump
+	url = https://github.com/kikito/bump.lua.git
