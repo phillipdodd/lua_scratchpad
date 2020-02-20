@@ -41,3 +41,22 @@ function TodoListItem:new(todolistItem)
     self.__index = self
     return todolistItem
 end
+
+UIComponentSwapper = {}
+function UIComponentSwapper:new(...)
+    local UIComponentSwapper = {
+        components = {}
+    }
+    setmetatable(UIComponentSwapper, self)
+    self.__index = self
+
+    --* Add Components as key and value both for easy removal later
+    for k, _ in {...} do
+        UIComponentSwapper[k] = k
+    end
+
+
+
+    return UIComponentSwapper
+end
+
