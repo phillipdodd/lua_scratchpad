@@ -7,3 +7,6 @@
 [submodule "love2d-scratchpad/libs/bump"]
 	path = love2d-scratchpad/libs/bump
 	url = https://github.com/kikito/bump.lua.git
+[submodule "love-platformer/libs/sti"]
+	path = love-platformer/libs/sti
+	url = https://github.com/karai17/Simple-Tiled-Implementation.git
