@@ -1,0 +1,6 @@
+{
+    "id": "xMin",
+    "name": "xMin Adjuster",
+    "icon": "plank09",
+    "usableType": "UsableLua"
+}

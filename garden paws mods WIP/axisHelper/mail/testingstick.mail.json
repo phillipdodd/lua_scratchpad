@@ -1,0 +1,10 @@
+{
+    "id": "testingstick.mail",
+    "relativeToId": "gamestart",
+    "day": 0,
+    "from": "myself",
+    "subject": "hahaha",
+    "letter": "take this; it's dangerous to go alone",
+    "signature": "ur welcome",
+    "items": "testingstick: 1"
+}
