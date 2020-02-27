@@ -1,0 +1,11 @@
+{
+    "id": "hourglassDelivery",
+    "relativeToId": "gamestart",
+    "day": 0,
+    "from": "Mayor Wilson",
+    "subject": "Catching Fallen Stars",
+    "letter": "Someone once gave me this and told me it would make my life easier. Now I give it to you. Keep it safe.",
+    "signature": "-W",
+    "items": "timeChangingHourglass : 1"
+}
+

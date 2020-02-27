@@ -120,51 +120,43 @@ end
 -- function xStick()
 --     Console.Log('doing the thing')
 
-    -- -- incline
-    -- for i = 0, 10, 0.5 do 
-    --     makeOrb(-2, i, i + 1)
-    --     makeOrb(-1, i, i + 1)
-    --     makeOrb(0, i, i + 1)
-    --     makeOrb(1, i, i + 1)
-    --     makeOrb(2, i, i + 1)
-    -- end
+-- incline
+for i = 0, 10, 0.5 do 
+    makeOrb(-2, i, i + 1)
+    makeOrb(-1, i, i + 1)
+    makeOrb(0, i, i + 1)
+    makeOrb(1, i, i + 1)
+    makeOrb(2, i, i + 1)
+end
 
-    -- vertical
-    -- for i = 0, 5, 1 do 
-    --     makeOrb(-2, i, 1)
-    --     makeOrb(-1, i, 1)
-    --     makeOrb(0, i, 1)
-    --     makeOrb(1, i, 1)
-    --     makeOrb(2, i, 1)
-    -- end
+-- vertical
+for i = 0, 5, 1 do 
+    makeOrb(-2, i, 1)
+    makeOrb(-1, i, 1)
+    makeOrb(0, i, 1)
+    makeOrb(1, i, 1)
+    makeOrb(2, i, 1)
+end
 
-    -- horizontal
-    -- for i = 0, 10, 0.5 do 
-    --     makeOrb(-2, -0.1, i)
-    --     makeOrb(-1, -0.1, i)
-    --     makeOrb(0, -0.1, i)
-    --     makeOrb(1, -0.1, i)
-    --     makeOrb(2, -0.1, i)
-    -- end
-
--- end
-
--- orbs = {}
-
--- z, y, x = 90 degree right turn
--- y, x, z = horizontal -> vertical
-
--- function makeOrb(x, y, z)
--- function MakeOrb(x, y, z)
---     local newHittable = Hittable.MakeHittable()
---     newHittable.AddDebugSphere()
---     -- newHittable.CreateSphereCollisions(0.65)
---     newHittable.transform.setParent(Player.transform)
---     newHittable.transform.localPosition = Vector3.New(x, y, z)
---     newHittable.transform.SetParent(nil)
---     -- newHittable.gameObject.AddInventory()
---     table.insert(orbs, newHittable)
--- end
+-- horizontal
+for i = 0, 10, 0.5 do 
+    makeOrb(-2, -0.1, i)
+    makeOrb(-1, -0.1, i)
+    makeOrb(0, -0.1, i)
+    makeOrb(1, -0.1, i)
+    makeOrb(2, -0.1, i)
+end
+    
+orbs = {}
+function MakeOrb(x, y, z)
+    local newHittable = Hittable.MakeHittable()
+    newHittable.AddDebugSphere()
+    newHittable.transform.setParent(Player.transform)
+    newHittable.transform.localPosition = Vector3.New(x, y, z)
+    newHittable.transform.SetParent(nil)
+    newHittable.gameObject.AddInventory()
+    table.insert(orbs, newHittable)
+end
 
 -- function MapTable(t, fn)
 --     local i = 0

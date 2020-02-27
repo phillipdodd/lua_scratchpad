@@ -6,15 +6,11 @@ function TodoList:new(todolist)
     return todolist
 end
 
-function TodoList:makeUI(x)
+function TodoList:makeUI()
     self.canvas = UI.CreateCanvas(true)
     local mainPanel = UI.CreatePanel(self.canvas).SetAnchors(0.3, 0.7, 0.1, 0.9)
     local titlePanel = UI.CreatePanel(mainPanel).SetAnchors(0.1,0.9,0.80,0.95)
-    local titleText = titleText = UI.CreateTextMesh(titlePanel, "Sign",76,0,0.6,0.9,1,"center","titletext").SetFont("TitleShadow")
-    
-    local signTitlePanel = UI.CreatePanel(mainPanel).SetAnchors(0.1,0.9,0.75,0.8)
-    local signTitleInput = UI.CreateInputField(signTitlePanel)
-    signTitleInput.placeholderText = "Type your sign title here"
+    local titleText = UI.CreateTextMesh(titlePanel, "Sign",76,0,0.6,0.9,1,"center","titletext").SetFont("TitleShadow")
 
     local signTextPanel = UI.CreatePanel(mainPanel).SetAnchors(0.1,0.9,0.15,0.7)
     local signTextInput = UI.CreateInputField(signTextPanel,true)
