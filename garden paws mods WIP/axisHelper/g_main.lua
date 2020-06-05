@@ -148,14 +148,25 @@ for i = 0, 10, 0.5 do
 end
     
 orbs = {}
-function MakeOrb(x, y, z)
+function makeOrb(x, y, z)
     local newHittable = Hittable.MakeHittable()
-    newHittable.AddDebugSphere()
+    newHittable.AddDebugSphere(0.05)
+    newHittable.CreateSphereCollisions()
+    newHittable.RegisterCallback(function(hittable) hittable.gameObject.Destroy() end, newHittable);
     newHittable.transform.setParent(Player.transform)
     newHittable.transform.localPosition = Vector3.New(x, y, z)
     newHittable.transform.SetParent(nil)
     newHittable.gameObject.AddInventory()
     table.insert(orbs, newHittable)
+end
+
+-- vertical
+for i = 0, 5, 1 do 
+    makeOrb(-2, i, 1)
+    makeOrb(-1, i, 1)
+    makeOrb(0, i, 1)
+    makeOrb(1, i, 1)
+    makeOrb(2, i, 1)
 end
 
 -- function MapTable(t, fn)

@@ -16,3 +16,5 @@ Player.gameObject.AddInventory('uraboxnow')
 inv.gameObject.transform.SetParent(Player.gameObject.transform)
 inv.gameObject.transform.localPosition = Vector3.zero
 inv.gameObject.AddDebugSphere()
+
+GameObject.AddModel(Model Name, Local Position, Local Rotation, Local Scale)
