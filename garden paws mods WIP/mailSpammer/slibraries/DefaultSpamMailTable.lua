@@ -1,1 +1,0 @@
-x = {"spamMailID1", "spamMailID2", "spamMailID3"}
