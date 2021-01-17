@@ -5,6 +5,8 @@ t = World.SpawnEntity(
         Vector3.New(-1,0,0)
     )
 )
+
+t.gameObject.AddModel("btoast.models.trophy", Vector3.zero, Vector3.one, Vector3.new(0.5, 0.5, 0.5))
 t.gameObject.transform.SetParent(Player.gameObject.transform)
 inv = t.gameObject.AddInventory('follow-box')
 inv.gameObject.transform.SetParent(t.gameObject.transform)
